@@ -10,7 +10,7 @@ Menu Item to shutdown and change container specs
 ## Installation
 
 ```bash
-jupyter labextension install @@madsi1m/jupyterlab-ext-changeconf
+jupyter labextension install @aarnet/jupyterlab-ext-changeconf
 ```
 
 ## Development
