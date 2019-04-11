@@ -34,8 +34,6 @@ const extension: JupyterLabPlugin<void> = {
     IMainMenu
   ],
   activate: (app: JupyterLab, palette: ICommandPalette, mainMenu: IMainMenu) => {
-    console.log('JupyterLab extension jupyterlab-ext-changeconf is activated');
-
     app.commands.addCommand(CommandIDs.shutdown, {
       label: 'Shutdown Current Session',
       execute: () => {
@@ -58,7 +56,6 @@ const extension: JupyterLabPlugin<void> = {
       }
     });
 
-    console.log(mainMenu);
     mainMenu.fileMenu.addGroup([{ command: CommandIDs.shutdown }], 20);
   }
 };
