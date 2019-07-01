@@ -5,7 +5,7 @@ import {
 } from '@jupyterlab/apputils';
 
 import {
-  JupyterLab, JupyterLabPlugin
+  JupyterFrontEnd, JupyterFrontEndPlugin
 } from '@jupyterlab/application';
 
 import {
@@ -26,14 +26,14 @@ namespace CommandIDs {
 /**
  * Initialization data for the jupyterlab-ext-changeconf extension.
  */
-const extension: JupyterLabPlugin<void> = {
+const extension: JupyterFrontEndPlugin<void> = {
   id: 'jupyterlab-ext-changeconf',
   autoStart: true,
   requires: [
     ICommandPalette,
     IMainMenu
   ],
-  activate: (app: JupyterLab, palette: ICommandPalette, mainMenu: IMainMenu) => {
+  activate: (app: JupyterFrontEnd, palette: ICommandPalette, mainMenu: IMainMenu) => {
     app.commands.addCommand(CommandIDs.shutdown, {
       label: 'Shutdown Current Session',
       execute: () => {
