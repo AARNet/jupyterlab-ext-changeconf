@@ -1,0 +1,10 @@
+.jp-Dialog-footer button.jp-Dialog-button:focus {
+	outline: 0 none !important;
+}
+
+[data-command="filemenu:logout"],
+[data-command="hub:logout"],
+[data-command="filemenu:shutdown"]
+{
+	display: none;
+}

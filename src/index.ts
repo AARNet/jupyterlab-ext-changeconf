@@ -56,7 +56,7 @@ const extension: JupyterFrontEndPlugin<void> = {
       }
     });
 
-    mainMenu.fileMenu.addGroup([{ command: CommandIDs.shutdown }], 20);
+    mainMenu.fileMenu.addGroup([{ command: CommandIDs.shutdown }], 100);
   }
 };
 
