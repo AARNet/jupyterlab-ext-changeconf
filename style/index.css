@@ -4,6 +4,7 @@
 
 [data-command="filemenu:logout"],
 [data-command="hub:logout"],
+[data-command="hub:control-panel"],
 [data-command="filemenu:shutdown"]
 {
 	display: none;
