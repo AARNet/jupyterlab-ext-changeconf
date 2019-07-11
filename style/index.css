@@ -10,7 +10,8 @@ li[data-command="filemenu:shutdown"]
 	display: none !important;
 }
 
-li[data-command="filemenu:shutdown"] + li[data-type="separator"]
+li[data-command="filemenu:shutdown"] + li[data-type="separator"],
+li[data-command="hub:logout"] + li[data-type="separator"]
 {
 	display: none !important;
 }
