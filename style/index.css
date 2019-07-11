@@ -2,10 +2,15 @@
 	outline: 0 none !important;
 }
 
-[data-command="filemenu:logout"],
-[data-command="hub:logout"],
-[data-command="hub:control-panel"],
-[data-command="filemenu:shutdown"]
+li[data-command="filemenu:logout"],
+li[data-command="hub:logout"],
+li[data-command="hub:control-panel"],
+li[data-command="filemenu:shutdown"]
 {
-	display: none;
+	display: none !important;
+}
+
+li[data-command="filemenu:shutdown"] + li[data-type="separator"]
+{
+	display: none !important;
 }
