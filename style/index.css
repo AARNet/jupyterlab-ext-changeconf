@@ -1,7 +1,9 @@
+/* popup */
 .jp-Dialog-footer button.jp-Dialog-button:focus {
 	outline: 0 none !important;
 }
 
+/* file menu */
 li[data-command="filemenu:logout"],
 li[data-command="hub:logout"],
 li[data-command="hub:control-panel"],
@@ -12,6 +14,13 @@ li[data-command="filemenu:shutdown"]
 
 li[data-command="filemenu:shutdown"] + li[data-type="separator"],
 li[data-command="hub:logout"] + li[data-type="separator"]
+{
+	display: none !important;
+}
+
+/* right click, hide share/download */
+li[data-command="filebrowser:share-main"],
+li[data-command="filebrowser:copy-download-link"]
 {
 	display: none !important;
 }
