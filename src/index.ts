@@ -39,7 +39,7 @@ const extension: JupyterFrontEndPlugin<void> = {
       execute: () => {
         let widget: Widget = new Widget();
 	widget.id = 'End Notebook Session';
-	widget.node.innerHTML = "You are going to shut down all your notebooks and remove your saved configuration.<br/><br/>Do you wish to continue?";
+	widget.node.innerHTML = "All running notebooks will be stopped.<br/><br/>Do you wish to continue?";
         showDialog({
           title: 'End Notebook Session',
 	  body: widget,

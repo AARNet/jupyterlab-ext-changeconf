@@ -1,6 +1,6 @@
 {
   "name": "@aarnet/jupyterlab-ext-changeconf",
-  "version": "1.0.1-c",
+  "version": "1.0.1-d",
   "description": "Menu Item to shutdown and change container specs",
   "keywords": [
     "jupyter",
