@@ -1,0 +1,45 @@
+{
+  "name": "@aarnet/jupyterlab-ext-changeconf",
+  "version": "2.0.1",
+  "description": "Menu Item to shutdown and change container specs",
+  "keywords": [
+    "jupyter",
+    "jupyterlab",
+    "jupyterlab-extension"
+  ],
+  "homepage": "https://github.com/AARNet/jupyterlab-ext-changeconf",
+  "bugs": {
+    "url": "https://github.com/AARNet/jupyterlab-ext-changeconf/issues"
+  },
+  "license": "BSD-3-Clause",
+  "author": "Michael D'Silva",
+  "files": [
+    "lib/**/*.{d.ts,eot,gif,html,jpg,js,js.map,json,png,svg,woff2,ttf}",
+    "style/**/*.{css,eot,gif,html,jpg,json,png,svg,woff2,ttf}"
+  ],
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AARNet/jupyterlab-ext-changeconf.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf lib",
+    "prepare": "npm run clean && npm run build",
+    "watch": "tsc -w"
+  },
+  "dependencies": {
+    "@jupyterlab/application": "^2.0.0",
+    "@jupyterlab/apputils": "^2.0.0",
+    "@jupyterlab/coreutils": "^4.0.0",
+    "@jupyterlab/mainmenu": "^2.0.0"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.0",
+    "typescript": "~3.7.3"
+  },
+  "jupyterlab": {
+    "extension": true
+  }
+}
