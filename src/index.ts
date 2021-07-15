@@ -50,7 +50,7 @@ const extension: JupyterFrontEndPlugin<void> = {
 	  ]
         }).then(result => {
           if (result.button.label === 'Yes') {  
-            window.location.replace('/hub/home#changeconfig');
+            window.location.replace('/hub/home?changeconfig');
 	  }
 	});
       }
